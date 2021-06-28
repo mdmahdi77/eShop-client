@@ -1,0 +1,17 @@
+.category{
+    border-right: 1px solid lightgrey;
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.category li{
+    list-style: none;
+    cursor: pointer;
+}
+.category .nav-link{
+    color: black;
+    font-weight: 700;
+}
+.category .active{
+    color: crimson;
+}
