@@ -2,10 +2,10 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Shop from '../Shop/Shop';
 
-const Home = () => {
+const Home = (props) => {
     return (
         <div>
-            <Navbar />
+            <Navbar cart={props.cart} />
             <Shop />
         </div>
     );

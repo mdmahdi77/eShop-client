@@ -4,8 +4,10 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Features from './Features';
 import Preloader from '../Preloader/Preloader'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartArrowDown, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
-const ProductDetails = () => {
+const ProductDetails = (props) => {
     const { productId } = useParams()
     const [productDetails, setProductDetails] = useState([])
     const [quantity, setQuantity] = useState(1)
@@ -22,6 +24,13 @@ const ProductDetails = () => {
 
     const pdDe = productDetails.find(pd => pd._id == productId)
 
+    const finalCartHandler = (pdDe) => {
+        pdDe.quantity = quantity
+        props.cartHandler(pdDe)
+        
+    }
+    console.log(pdDe)
+
     return (
         <div className="container my-5">
             <Preloader visibility={preloaderVisibility} />
@@ -33,8 +42,15 @@ const ProductDetails = () => {
                         <div className="cart-controller">
                             <button onClick={() => setQuantity(quantity <= 1 ? 1 : quantity - 1)}>-</button>
                             {quantity}
-                            <button onClick={() => setQuantity(quantity + 1)}>+</button>
+                            {
+                                pdDe?.stock >= quantity ? <button onClick={() => setQuantity(quantity + 1)}>+</button>
+                                : 
+                                <p>out of stock</p>
+                            }
                         </div>
+                    </div>
+                    <div className="action">
+                        <button onClick={() => finalCartHandler(pdDe)}><FontAwesomeIcon icon={faCartArrowDown} /> / Add</button>
                     </div>
                 </div>
                 <div className="col-md-8">

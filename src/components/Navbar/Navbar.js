@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../images/logo/logo.png'
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
     return (
@@ -22,13 +22,13 @@ const Navbar = () => {
                             <Link class="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" href="#"><FontAwesomeIcon icon={faCartArrowDown} /></Link>
+                            <Link class="nav-link" to="/shipment"><FontAwesomeIcon icon={faCartArrowDown} /> {props.cart?.length}</Link>
                         </li>
                         <li class="nav-item">
                             <Link class="nav-link" href="#">Pricing</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</Link>
+                            <Link class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</Link>
                         </li>
                     </ul>
                 </div>
