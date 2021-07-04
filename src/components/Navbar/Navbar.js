@@ -32,9 +32,6 @@ const Navbar = (props) => {
                             <Link class="nav-link active" to="/login">Login</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link active" to="/">{loggedIn.name}</Link>
-                        </li>
-                        <li class="nav-item">
                             <Link class="nav-link active" to="/orders">Orders</Link>
                         </li>
                         <li class="nav-item">
@@ -42,6 +39,9 @@ const Navbar = (props) => {
                         </li>
                         <li class="nav-item">
                             <Link class="nav-link active" to="/dashboard">Dashboard</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link text-danger" to="/">{loggedIn.name}</Link>
                         </li>
                     </ul>
                 </div>

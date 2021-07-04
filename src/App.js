@@ -123,11 +123,11 @@ function App() {
             <Dashboard />
           </Route>
           <Route path="/orders">
-            <DashNavbar />
+            <Navbar cart={cart} />
             <Orders />
           </Route>
           <Route path="/review">
-            <DashNavbar />
+            <Navbar cart={cart} />
             <Review />
           </Route>
           <Route path="/orderList">

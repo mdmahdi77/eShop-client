@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import Shop from '../Shop/Shop';
+import Testimonials from '../Testimonials/Testimonials';
 
 const Home = (props) => {
 
@@ -15,6 +16,7 @@ const Home = (props) => {
             <Navbar cart={props.cart} />
             <Banner />
             <Shop />
+            <Testimonials />
             <Footer />
         </div>
     );

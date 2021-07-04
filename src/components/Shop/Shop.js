@@ -33,6 +33,7 @@ const Shop = () => {
         <div className="container-fluid my-5">
             <div className="row">
                 <div className="col-md-3">
+                    <h3 className="text-danger mb-4 text-center">Categories</h3>
                     <ul className="category bg-light rounded py-3 mb-5">
                         <li className="nav-item" onClick={() => setSelected("android")}>
                             <span className={selected === "android" ? "active nav-link" : "nav-link"}>Android</span>
@@ -43,6 +44,10 @@ const Shop = () => {
                         <li className="nav-item" onClick={() => setSelected("camera")}>
                             <span className={selected === "camera" ? "active nav-link" : "nav-link"}>Camera</span>
                         </li>
+                    </ul>
+                    <h5 className="text-warning text-center my-4">Coming Soon</h5>
+                    <ul className="coming">
+                        <li></li>
                     </ul>
                 </div>
                 <div className="col-md-9">

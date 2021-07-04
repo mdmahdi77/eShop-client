@@ -5,3 +5,25 @@
     background-size: cover;
     height: 100vh;
 }
+.banner-header{
+    font-size: 5rem;
+}
+.banner-header-2{
+    font-size: 2rem;
+}
+.banner-shop{
+    display: inline-block;
+    background-color: crimson;
+    padding: 8px 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.banner-shop:hover{
+    color: crimson;
+    background-color: white;
+    letter-spacing: 2px;
+}
