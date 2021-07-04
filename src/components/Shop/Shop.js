@@ -23,17 +23,17 @@ const Shop = () => {
     }, [])
 
     const filterProduct = products.filter(product => product.category == selected)
-    console.log(filterProduct)
 
     useEffect(() => {
         setCurrentData(filterProduct.slice(offset, offset + pageLimit));
     }, [offset, filterProduct]);
+    console.log(currentData)
 
     return (
         <div className="container-fluid my-5">
             <div className="row">
                 <div className="col-md-3">
-                    <ul className="category nav">
+                    <ul className="category bg-light rounded py-3 mb-5">
                         <li className="nav-item" onClick={() => setSelected("android")}>
                             <span className={selected === "android" ? "active nav-link" : "nav-link"}>Android</span>
                         </li>

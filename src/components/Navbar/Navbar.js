@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../images/logo/logo.png'
+import { useContext } from 'react';
+import { UserContext } from '../../App';
+import './Navbar.css'
 
 const Navbar = (props) => {
+    const [loggedIn, setLoggedIn] = useContext(UserContext)
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
     return (
@@ -22,13 +26,22 @@ const Navbar = (props) => {
                             <Link class="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" to="/shipment"><FontAwesomeIcon icon={faCartArrowDown} /> {props.cart?.length}</Link>
+                            <Link class="nav-link active" to="/shipment"><FontAwesomeIcon icon={faCartArrowDown} /> {props.cart?.length}</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" href="#">Pricing</Link>
+                            <Link class="nav-link active" to="/login">Login</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</Link>
+                            <Link class="nav-link active" to="/">{loggedIn.name}</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link active" to="/orders">Orders</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link active" to="/review">Review</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link active" to="/dashboard">Dashboard</Link>
                         </li>
                     </ul>
                 </div>
