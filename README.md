@@ -8,12 +8,12 @@
 <a href="https://eshop-c663d.web.app/" target="_blank">Live Site</a> & <a href="https://github.com/mdmahdi77/eShop-server" target="_blank">Server Repository</a>
 <br>
 <h3>Features</h3>
-<li>User can see product details and order from the menu<li>
-<li>Sign up to place order<li>
-<li>User can pay only credit card<li>
-<li>User can also review their opinion<li>
-<li>User can see their total order<li>
-<li>Admin can make new admin and see total clients order<li>
+<li>User can see product details and order from the menu</li>
+<li>Sign up to place order</li>
+<li>User can pay only credit card</li>
+<li>User can also review their opinion</li>
+<li>User can see their total order</li>
+<li>Admin can make new admin and see total clients order</li>
 <br>
 <h3>Frontend Technology</h3>
 <p>1. HTML</p>
