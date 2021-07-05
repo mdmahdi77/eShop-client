@@ -64,7 +64,7 @@ const Shipment = (props) => {
                     </form>
                 </div>
                 <div style={{ display: (name && phone && address) ? "block" : "none" }} className="col-md-6">
-                    <h3 className="my-5">Have to complete payment</h3>
+                    <h3 className="mb-5">Have to complete payment</h3>
                     <hr />
                     <Elements stripe={stripePromise}>
                         <Payment markAsPaid={markAsPaid} />

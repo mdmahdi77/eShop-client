@@ -16,7 +16,7 @@ const ProductDetails = (props) => {
     // const [notSuccess, setNotSuccess] = useState(true)
 
     useEffect(() => {
-        fetch('http://localhost:8000/products')
+        fetch('https://dry-woodland-65414.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setProductDetails(data)

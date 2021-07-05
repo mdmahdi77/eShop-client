@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import Shop from '../Shop/Shop';
 import Testimonials from '../Testimonials/Testimonials';
+import Blogs from '../../components/Blogs/Blogs'
 
 const Home = (props) => {
 
@@ -16,6 +17,7 @@ const Home = (props) => {
             <Navbar cart={props.cart} />
             <Banner />
             <Shop />
+            <Blogs />
             <Testimonials />
             <Footer />
         </div>

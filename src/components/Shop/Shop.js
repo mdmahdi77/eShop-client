@@ -14,7 +14,7 @@ const Shop = () => {
     const [preloaderVisibility, setPreloaderVisibility] = useState("block")
 
     useEffect(() => {
-        fetch('http://localhost:8000/products')
+        fetch('https://dry-woodland-65414.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data)
@@ -27,7 +27,7 @@ const Shop = () => {
     useEffect(() => {
         setCurrentData(filterProduct.slice(offset, offset + pageLimit));
     }, [offset, filterProduct]);
-    console.log(currentData)
+    // console.log(currentData)
 
     return (
         <div className="container-fluid my-5">
@@ -46,9 +46,7 @@ const Shop = () => {
                         </li>
                     </ul>
                     <h5 className="text-warning text-center my-4">Coming Soon</h5>
-                    <ul className="coming">
-                        <li></li>
-                    </ul>
+                    <h6 className="text-center">More categories</h6>
                 </div>
                 <div className="col-md-9">
                     <div className="row">

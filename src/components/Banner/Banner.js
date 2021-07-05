@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div className="banner">
-            <div className="container py-5">
+            <div className="container banner-2 py-5">
                 <div className="row">
                     <div className="col-12 text-center">
                         <h1 className="banner-header my-5 text-light">eShop is always by your side</h1>

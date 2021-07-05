@@ -11,7 +11,7 @@ const Review = () => {
             desc: data.desc
         }
 
-        const url = `http://localhost:8000/addReview`
+        const url = `https://dry-woodland-65414.herokuapp.com/addReview`
 
         fetch(url, {
             method: 'POST',

@@ -50,7 +50,7 @@ function App() {
 
     const ordersDetailsData = { orderItems, deliveryDetails, email: userEmail, orderTime: new Date()}
 
-    fetch('http://localhost:8000/submitOrders', {
+    fetch('https://dry-woodland-65414.herokuapp.com/submitOrders', {
       method: 'POST',
       headers: { "content-type": "application/json" },
       body: JSON.stringify(ordersDetailsData)
