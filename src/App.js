@@ -123,11 +123,11 @@ function App() {
             <Dashboard />
           </PrivateRoute>
           <Route path="/orders">
-            <Navbar cart={cart} />
+            <DashNavbar />
             <Orders />
           </Route>
           <Route path="/review">
-            <Navbar cart={cart} />
+            <DashNavbar />
             <Review />
           </Route>
           <Route path="/orderList">
