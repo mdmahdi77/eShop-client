@@ -6,14 +6,12 @@
 <p>A single page e-commerce app where people are able to select product in their cart and checkout the cart with their information</p>
 <br>
 <h3>Features</h3>
-<ul>
 <li>User can see product details and order from the menu<li>
 <li>Sign up to place order<li>
 <li>User can pay only credit card<li>
 <li>User can also review their opinion<li>
 <li>User can see their total order<li>
 <li>Admin can make new admin and see total clients order<li>
-</ul>
 <br>
 <h3>Frontend Technology</h3>
 <p>1. HTML</p>
