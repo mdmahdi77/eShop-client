@@ -5,6 +5,8 @@
 <h1  font-size="30">eShop</h1>
 <p>A single page e-commerce app where people are able to select product in their cart and checkout the cart with their information</p>
 <br>
+<a href="https://eshop-c663d.web.app/" target="_blank">Live Site</a> & <a href="https://github.com/mdmahdi77/eShop-server" target="_blank">Server Repository</a>
+<br>
 <h3>Features</h3>
 <li>User can see product details and order from the menu<li>
 <li>Sign up to place order<li>
